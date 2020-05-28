@@ -1,4 +1,4 @@
-## AGL 
+# AGL 
  
  Programming challenge
 
@@ -8,17 +8,19 @@ Need to write some code to consume the json and output a list of all the cats in
 
 I have done the code in two technologies. One is in Java and the other is in Angular 
 
-## Java
+# Java
 
 Run the code on eclipse with IDK 1.6 or later and related jar files.
 
-## Angular 
+# Angular 
 
-# With VisualStudio Code 
+For Angular, we can test the code in two ways, either with VScode or Command Prompt.
+
+## With VisualStudio Code 
 
 Run directly on the VSCode. The result appears on http://localhost:4200/
 
-# With CommandPrompt
+## With CommandPrompt
 
 Get to the directory where code is placed and use the command:
 
