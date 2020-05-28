@@ -1,0 +1,39 @@
+    <div class="results-container">
+      <div class="row">
+        <div class="col-xs-12 filter-container">
+          Cat name sort order is 
+          <input type="radio" id="asc" name="sortOrder" value="asc" [(ngModel)]="catSortOrder" ><label for="asc" >Ascending</label>
+        </div>
+      </div>     
+      <div class="row results-container-main-padding">
+        <div class="col-xs-12  col-sm-6">
+          <div class="container-fluid ">
+            <div class="row">
+              <div class="col-xs-12 row-padding">
+                  <h4>Owner - Male</h4>
+              </div>
+            </div>
+            <div class="row row-indent" *ngFor="let catName of maleOwnedCats  | sortCats: catSortOrder;  let i = index">
+              <div id="male-cats{{i}}" class="col-xs-12 male-cats">
+                  {{ catName }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="container-fluid ">
+            <div class="row">
+              <div class="col-xs-12 row-padding">
+                  <h4>Owner - Female</h4>
+              </div>
+            </div>
+            <div class="row row-indent" *ngFor="let catName of femaleOwnedCats  | sortCats: catSortOrder; let i = index">
+              <div id="female-cats{{i}}" class="col-xs-12 female-cats">
+                  {{ catName }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
